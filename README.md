@@ -37,7 +37,7 @@ func main() {
 	}()
 
 	// put a key
-	err = db.Put([]byte("name"), []byte("lotusdb"), nil)
+	err = db.Put([]byte("name"), []byte("lotusdb"))
 	if err != nil {
 		panic(err)
 	}
@@ -50,7 +50,7 @@ func main() {
 	println(string(val))
 
 	// delete a key
-	err = db.Delete([]byte("name"), nil)
+	err = db.Delete([]byte("name"))
 	if err != nil {
 		panic(err)
 	}
